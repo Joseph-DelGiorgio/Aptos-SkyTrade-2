@@ -1,0 +1,11 @@
+[package]
+name = "Aptos_Sky_Trade"
+version = "1.0.0"
+authors = []
+
+[addresses]
+SkyTrade = "0xb1f4afa3ba948a570499706b00124653cf54627fcdc421de1517d98f2eeb41f8"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework", rev = "main" }
+
