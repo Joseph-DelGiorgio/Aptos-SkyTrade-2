@@ -3,7 +3,7 @@ import { WalletProvider, useWallet } from '@aptos-labs/wallet-adapter-react';
 import CreateAirRights from './components/CreateAirRights';
 import AirRightsList from './components/AirRightsList';
 import TransferAirRights from './components/TransferAirRights';
-import './App.css'; // Ensure you create a CSS file for these styles
+import './App.css';
 
 const App: React.FC = () => {
   const { account } = useWallet();
@@ -13,11 +13,9 @@ const App: React.FC = () => {
       <div className="app">
         <header className="app-header">
           <h1>SkyTrade: Air Rights Management</h1>
-          {account ? (
-            <p className="connected">Connected as {account.address}</p>
-          ) : (
-            <p className="disconnected">Please connect your wallet.</p>
-          )}
+          <p className={account ? 'connected' : 'disconnected'}>
+            {account ? `Connected as ${account.address}` : 'Please connect your wallet.'}
+          </p>
         </header>
 
         <main className="app-content">
@@ -43,4 +41,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-

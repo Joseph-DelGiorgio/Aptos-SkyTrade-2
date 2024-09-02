@@ -1,3 +1,4 @@
+/* General App Styles */
 .app {
   text-align: center;
   font-family: Arial, sans-serif;
@@ -9,6 +10,7 @@
   justify-content: space-between;
 }
 
+/* Header Styles */
 .app-header {
   background-color: #282c34;
   padding: 20px;
@@ -20,6 +22,7 @@
   font-size: 2.5rem;
 }
 
+/* Connection Status Styles */
 .connected {
   color: #4caf50;
 }
@@ -28,6 +31,7 @@
   color: #f44336;
 }
 
+/* Main Content Styles */
 .app-content {
   flex-grow: 1;
   padding: 20px;
@@ -39,11 +43,13 @@
   gap: 20px;
 }
 
+/* Connect Prompt Styles */
 .connect-prompt {
   font-size: 1.2rem;
   color: #555;
 }
 
+/* Footer Styles */
 .app-footer {
   background-color: #282c34;
   color: white;
